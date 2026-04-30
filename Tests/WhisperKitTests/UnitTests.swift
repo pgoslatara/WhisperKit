@@ -3135,7 +3135,7 @@ final class UnitTests: XCTestCase {
         let options = DecodingOptions(
             withoutTimestamps: true,
             suppressBlank: false,
-            supressTokens: []
+            suppressTokens: []
         )
 
         let allFilters = decoder.createLogitsFilters(
@@ -3157,7 +3157,7 @@ final class UnitTests: XCTestCase {
         let options = DecodingOptions(
             withoutTimestamps: true,
             suppressBlank: true,
-            supressTokens: []
+            suppressTokens: []
         )
 
         let allFilters = decoder.createLogitsFilters(
@@ -3179,7 +3179,7 @@ final class UnitTests: XCTestCase {
         let options = DecodingOptions(
             withoutTimestamps: true,
             suppressBlank: false,
-            supressTokens: [0, 2, 11, 15]  // Mix of tokens < 10 and >= 10
+            suppressTokens: [0, 2, 11, 15]  // Mix of tokens < 10 and >= 10
         )
 
         let allFilters = decoder.createLogitsFilters(
@@ -3204,7 +3204,7 @@ final class UnitTests: XCTestCase {
         let options = DecodingOptions(
             withoutTimestamps: false,
             suppressBlank: false,
-            supressTokens: []
+            suppressTokens: []
         )
 
         let allFilters = decoder.createLogitsFilters(
@@ -3228,7 +3228,7 @@ final class UnitTests: XCTestCase {
         let options = DecodingOptions(
             withoutTimestamps: false,
             suppressBlank: true,
-            supressTokens: [0, 2, 11, 15]  // Mix of tokens < 10 and >= 10
+            suppressTokens: [0, 2, 11, 15]  // Mix of tokens < 10 and >= 10
         )
 
         let allFilters = decoder.createLogitsFilters(

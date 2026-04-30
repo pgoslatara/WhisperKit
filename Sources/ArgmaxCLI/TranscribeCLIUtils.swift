@@ -59,7 +59,7 @@ internal class TranscribeCLIUtils {
             withoutTimestamps: arguments.withoutTimestamps,
             wordTimestamps: arguments.wordTimestamps,
             clipTimestamps: arguments.clipTimestamps,
-            supressTokens: arguments.supressTokens,
+            suppressTokens: arguments.suppressTokens,
             compressionRatioThreshold: arguments.compressionRatioThreshold ?? 2.4,
             logProbThreshold: arguments.logprobThreshold ?? -1.0,
             firstTokenLogProbThreshold: arguments.firstTokenLogProbThreshold,

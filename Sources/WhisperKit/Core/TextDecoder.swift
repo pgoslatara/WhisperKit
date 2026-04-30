@@ -1076,9 +1076,9 @@ open class TextDecoder: TextDecoding, WhisperMLModel {
             )
         }
 
-        if !options.supressTokens.isEmpty {
-            let filteredSupressTokens = options.supressTokens.filter { $0 < tokenizer.specialTokens.specialTokenBegin }
-            allFilters.append(SuppressTokensFilter(suppressTokens: filteredSupressTokens))
+        if !options.suppressTokens.isEmpty {
+            let filteredSuppressTokens = options.suppressTokens.filter { $0 < tokenizer.specialTokens.specialTokenBegin }
+            allFilters.append(SuppressTokensFilter(suppressTokens: filteredSuppressTokens))
         }
 
         if !options.withoutTimestamps {
